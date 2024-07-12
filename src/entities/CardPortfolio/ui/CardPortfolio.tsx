@@ -1,4 +1,3 @@
-import ReactLogo from "../../../app/img/react-logo.png";
 import "../styles/main.scss";
 
 export const CardPortfolio = ({ data }: any) => {
@@ -8,7 +7,7 @@ export const CardPortfolio = ({ data }: any) => {
         className="card-visit col-xl-4 col-lg-6 col-md-6 col-sm-6 m-auto mt-5"
         style={{ width: "18rem" }}
       >
-        <img src={ReactLogo} className="card-img-top p-3" alt="img" />
+        <img src={data.img} className="card-img-top p-3" alt="img" />
         <div className="card-body position-relative">
           <h6 className="card-title color-lightn font-weight-bold">
             {data.name}

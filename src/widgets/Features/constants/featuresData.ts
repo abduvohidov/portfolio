@@ -9,7 +9,7 @@ interface IFeaturesData {
   link: string;
 }
 
-const featuresData: IFeaturesData[] = [
+const featuresData: Array<IFeaturesData> = [
   {
     id: 1,
     title: "Frontend Developer",
