@@ -12,7 +12,7 @@ export const Footer = () => {
         }}
       />
       <a
-        href="https://www.instagram.com/abduvohidovabdullokh/?hl=ru"
+        href="https://www.youtube.com/@abduvohidovabdullah"
         className="text-light text-decoration-none mt-3"
       >
         © <span>abduvohidovabdullokh</span>

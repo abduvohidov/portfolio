@@ -14,15 +14,21 @@ const socials: Array<ISocials> = [
   },
   {
     id: 2,
-    name: "instagram",
-    icon: "bx bxl-instagram-alt",
-    link: "https://www.instagram.com/abduvohidovabdullokh/",
+    name: "youtube",
+    icon: "bx bxl-youtube",
+    link: "https://www.youtube.com/@abduvohidovabdullah",
   },
   {
     id: 3,
     name: "facebook",
     icon: "bx bxl-facebook-circle",
     link: "https://www.facebook.com/abdulloh.abduvohidov.79",
+  },
+  {
+    id: 4,
+    name: "linkedin",
+    icon: "bx bxl-linkedin",
+    link: "https://www.linkedin.com/in/abdullah-abduvohidov-5a79b325a/",
   },
 ];
 
