@@ -5,7 +5,7 @@ interface ISocials {
   link: string;
 };
 
-const socials: ISocials[] = [
+const socials: Array<ISocials> = [
   {
     id: 1,
     name: "telegram",

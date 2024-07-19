@@ -4,7 +4,7 @@ export const ProgressList = ({ data }: any) => {
       <div className="progress-head mt-4">
         <p className="text-uppercase mb-1">
           <span className="fw-bold text--light">{data.type}</span>
-          <span className="fw-bold text--light p-4 bg-transparent">{data.procent}</span>
+          <span className="fw-bold text--light p-4 bg-transparent">{data.procent}%</span>
         </p>
       </div>
       <div className="progress bg-secondary w-75" style={{height: '7px'}}>

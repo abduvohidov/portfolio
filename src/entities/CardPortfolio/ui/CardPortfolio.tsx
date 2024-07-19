@@ -9,14 +9,17 @@ export const CardPortfolio = ({ data }: any) => {
       >
         <img src={data.img} className="card-img-top p-3" alt="img" />
         <div className="card-body position-relative">
-          <h6 className="card-title color-lightn font-weight-bold">
-            {data.name}
-          </h6>
-          <p className="card-text card-visit-text mb-3 color-lightn">
-            {data.info}
-          </p>
+          <div className="card-text-block">
+            <h6 className="card-title color-lightn font-weight-bold">
+              {data.name}
+            </h6>
+            <p className="card-text card-visit-text pt-3 mb-3 color-lightn">
+              {data.info}
+            </p>
+          </div>
+
           <a
-            href="/"
+            href={data.link}
             className="btn bg--custom text--dark fw-bold"
             target="_blank"
           >

@@ -17,7 +17,7 @@ export const Head = () => {
               </p>
               <h1 className="text-white">
                 Hi, I'm <strong className="text--custom">Abdullah</strong>
-                <br /> I'm <strong>React Developer</strong>
+                <br /> I'm <strong>Software Engineer</strong>
               </h1>
               <p className="text--light mt-3">
                 I am Abdullokh from Uzbekistan. I love coding and give solutions
