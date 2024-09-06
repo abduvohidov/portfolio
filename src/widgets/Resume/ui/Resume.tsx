@@ -1,8 +1,18 @@
 import { Line } from "../../../shared/Line";
-import {frontendSkills, backendSkills} from "../constants/resumeData";
 import { ProgressList } from "../../../shared/ProgressList";
 
-export const Resume = () => {
+interface Skill {
+  id: string;
+  type: string;
+  procent: number;
+}
+
+interface ResumeProps {
+  frontendSkills: Skill[];
+  backendSkills: Skill[];
+}
+
+export const Resume: React.FC<ResumeProps> = ({ frontendSkills, backendSkills }) => {
   return (
     <section className="section-resume">
       <div className="container">
@@ -18,12 +28,15 @@ export const Resume = () => {
               </p>
               <h3 className="text--light fs-4">Frontend skills</h3>
             </div>
-            {frontendSkills.length
-              ? frontendSkills.map((item, index) => {
-                  return <ProgressList key={index} data={item} />;
-                })
-              : "not found !"}
+            {frontendSkills.length ? (
+              frontendSkills.map((skill) => (
+                <ProgressList key={skill.id} data={skill} />
+              ))
+            ) : (
+              <p>Not found!</p>
+            )}
           </div>
+
           <div className="col-xl-6">
             <div className="resume-progress-head mb-3">
               <p className="text--custom mb-1 fs-7 text-uppercase fw-bold">
@@ -31,11 +44,13 @@ export const Resume = () => {
               </p>
               <h3 className="text--light fs-4">Backend skills</h3>
             </div>
-            {backendSkills.length
-              ? backendSkills.map((item, index) => {
-                  return <ProgressList key={index} data={item} />;
-                })
-              : "not found !"}
+            {backendSkills.length ? (
+              backendSkills.map((skill) => (
+                <ProgressList key={skill.id} data={skill} />
+              ))
+            ) : (
+              <p>Not found!</p>
+            )}
           </div>
         </div>
 
