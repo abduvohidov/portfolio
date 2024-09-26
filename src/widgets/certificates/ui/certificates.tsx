@@ -7,12 +7,7 @@ function certificatesMap() {
     return certificates.map((item, index) => {
       return (
         <div className="col-xl-3 mt-4">
-          <img 
-            src={item.img} 
-            width={300} 
-            key={index} 
-            alt="certificate.png" 
-          />
+          <img src={item.img} width={300} key={index} alt="certificate.png" />
         </div>
       );
     });

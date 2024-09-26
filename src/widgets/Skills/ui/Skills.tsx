@@ -1,9 +1,9 @@
 import "../styles/index.scss";
 import { Line } from "../../../shared/Line";
 import { CardFeatures } from "../../../entities/CardFeatures";
-import featuresData from "../constants/featuresData";
+import featuresData from "../constants/skillsData";
 
-export const Features = () => {
+export const Skills = () => {
   function windowsScroll() {
     return window.scrollTo(0, 0);
   }
@@ -21,9 +21,9 @@ export const Features = () => {
       <div className="container" onClick={() => windowsScroll()}>
         <div className="features-head">
           <p className="text--custom mb-0 fs-7 text-uppercase fw-bold">
-            Portfolio
+            Skills
           </p>
-          <h3 className="text--light fs-1">Projects</h3>
+          <h3 className="text--light fs-1">What can i do ?</h3>
         </div>
         <div className="features-body">
           <div className="row">{renderData()}</div>

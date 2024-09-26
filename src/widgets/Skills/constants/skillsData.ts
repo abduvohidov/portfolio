@@ -1,4 +1,4 @@
-interface IFeaturesData {
+interface ISkillsData {
   id: number | string;
   title: string;
   info: string;
@@ -9,31 +9,31 @@ interface IFeaturesData {
   link: string;
 }
 
-const featuresData: Array<IFeaturesData> = [
+const featuresData: Array<ISkillsData> = [
   {
     id: 1,
     title: "Frontend",
-    info: "Portfolio",
+    info: "Skills",
     icon: {
       right: "bx bx-chevron-right",
       main: "bx bxl-react",
     },
-    link: "/frontend/portfolio",
+    link: "/frontend/skills",
   },
   {
     id: 2,
     title: "Backend",
-    info: "Portfolio",
+    info: "Skills",
     icon: {
       right: "bx bx-chevron-right",
       main: "bx bxl-dev-to",
     },
-    link: "/backend/porfolio",
+    link: "/backend/skills",
   },
   {
     id: 3,
     title: "Video Maker",
-    info: "Portfolio",
+    info: "Skills",
     icon: {
       right: "bx bx-chevron-right",
       main: "bx bxs-videos",
